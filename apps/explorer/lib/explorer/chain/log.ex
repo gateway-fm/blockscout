@@ -29,24 +29,8 @@ defmodule Explorer.Chain.Log do
    * `index` - index of the log entry in all logs for the `transaction`
    * `type` - type of event.  *Nethermind-only*
   """
-  @type t :: %__MODULE__{
-          address: %Ecto.Association.NotLoaded{} | Address.t(),
-          address_hash: Hash.Address.t(),
-          block_hash: Hash.Full.t(),
-          block_number: non_neg_integer() | nil,
-          data: Data.t(),
-          first_topic: String.t(),
-          second_topic: String.t(),
-          third_topic: String.t(),
-          fourth_topic: String.t(),
-          transaction: %Ecto.Association.NotLoaded{} | Transaction.t(),
-          transaction_hash: Hash.Full.t(),
-          index: non_neg_integer(),
-          type: String.t() | nil
-        }
-
   @primary_key false
-  schema "logs" do
+  typed_schema "logs" do
     field(:data, Data)
     field(:first_topic, :string)
     field(:second_topic, :string)

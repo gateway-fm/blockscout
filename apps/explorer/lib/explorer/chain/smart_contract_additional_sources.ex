@@ -16,13 +16,7 @@ defmodule Explorer.Chain.SmartContractAdditionalSource do
   * `file_name` - the name of the Solidity file with contract code (with extension).
   * `contract_source_code` - the Solidity source code from the file with `file_name`.
   """
-
-  @type t :: %Explorer.Chain.SmartContractAdditionalSource{
-          file_name: String.t(),
-          contract_source_code: String.t()
-        }
-
-  schema "smart_contracts_additional_sources" do
+  typed_schema "smart_contracts_additional_sources" do
     field(:file_name, :string)
     field(:contract_source_code, :string)
 

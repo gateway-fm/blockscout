@@ -10,7 +10,7 @@ defmodule Explorer.Utility.TokenTransferTokenIdMigratorProgress do
   alias Explorer.Chain.Cache.BlockNumber
   alias Explorer.Repo
 
-  schema "token_transfer_token_id_migrator_progress" do
+  typed_schema "token_transfer_token_id_migrator_progress" do
     field(:last_processed_block_number, :integer)
 
     timestamps()
