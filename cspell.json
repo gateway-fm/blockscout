@@ -557,7 +557,9 @@
         "tokennfttx",
         "libraryname",
         "libraryaddress",
-        "evmversion"
+        "evmversion",
+        "verifyproxycontract",
+        "checkproxyverification"
     ],
     "enableFiletypes": [
         "dotenv",
