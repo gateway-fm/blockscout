@@ -4,6 +4,8 @@
 
 ### Features
 
+- [#9120](https://github.com/blockscout/blockscout/pull/9120) - Add GET and POST `/api/v2/smart-contracts/:address_hash/audit-reports`
+
 ### Fixes
 
 ### Chore
