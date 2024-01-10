@@ -559,7 +559,8 @@
         "libraryaddress",
         "evmversion",
         "verifyproxycontract",
-        "checkproxyverification"
+        "checkproxyverification",
+        "NOTOK"
     ],
     "enableFiletypes": [
         "dotenv",
