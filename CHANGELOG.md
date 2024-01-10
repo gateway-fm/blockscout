@@ -4,6 +4,8 @@
 
 ### Features
 
+- [#9131](https://github.com/blockscout/blockscout/pull/9131) - Merge addresses stage with address referencing
+
 ### Fixes
 
 - [#9102](https://github.com/blockscout/blockscout/pull/9102) - Fix some log topics for Suave and Polygon Edge
